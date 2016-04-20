@@ -1,67 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+      width:100%;
+      height: 100%;
+  }
+  html {
+      width: 100%;
+      height: 100%;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #6fc494;/*#1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #f0f1f5; /*#474e5d; /* Dark Blue */
+      color: #777777;
+  }
+  .bg-3 { 
+      background-color: #f0f1f5; /* #5db5e6 #ffffff; /* White */
+      color: #777777;/*#555555;*/
+  }
+  .bg-4 { 
+      background-color: #122234; /* #2f2f2f; /* Black Gray */
+      color: #777777;/*#fff; */
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      background-color: #f0f1f5;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      color: #ffffff;
+  }
+  .navbar-nav  li a:hover {
+      background-color: #f0f1f5;
+      color: #1abc9c !important; /* #1abc9c */
+  }
+  .navbar-toggle {
+      background-color: #f0f1f5;
+  }
+  .line {
+    border: 0;
+  }
+  
+  @media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Brandon Ginoza : Programmer and Guitar Player. ">
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  @media(max-width:767px) {
+    .hobbie {
+        padding-left: 15%;   
+        padding-right: 15%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+  } 
+  @media(max-width:991px) and (min-width:768px) {
+    #page-top img {
+        padding-top: 140px;   
+    }
+  }
+  @media(min-width:991px) {
+    #page-top img {
+        padding-top: 80px;
+    }
+  }
+  @media(max-width:767px) {
+    #page-top img {
+        padding-top: 80px;   
+    }
+  }
+  .text-left {
+    padding-left: 4%   
+  }
 
-    <title>Brandon Ginoza</title>
-  </head>
+  .links {
+      margin: 1%;   
+  }
+  .educationlist {
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+  }
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ginozab">View on GitHub</a>
-
-          <h1 id="project_title">Brandon Ginoza</h1>
-          <h2 id="project_tagline">Programmer and Guitar Player. </h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+      
+  #bwgcube {
+    max-height: 200%;
+    max-width: 200%;
+  }
+  #welcome {
+    margin-top: 5%;   
+  }
+  #education {
+    margin-top: 5%;   
+  }
+  </style>
+<script>
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+</script>
     
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-  </body>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Me</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Brandon W. Ginoza <!--<img src="imgs/bwgcube.png" id="bwgcube" class="img-responsive" style="display:inline"> --></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Education">Education</a>
+                    </li>
+                    <li>
+                        <a href="pdfs/brandon_ginoza_resume.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- First Container -->
+<div id="page-top" class="container-fluid bg-1 text-center">
+  <!--<img src="imgs/curvedlettering.png" class="img-responsive" style="display:inline" alt="name"> -->
+    <img src="imgs/bwgcube.png" class="img-responsive" style="display:inline" alt="name">
+
+</div>
+<hr class="line">
+<!-- Second Container -->
+<div id="about" class="container-fluid bg-2 text-center">
+  <h1 id="welcome" class="margin">Welcome!</h1>
+  <p>Thank you for visiting my website! Let me tell you a little about myself by answering a few questions you may have.</p>
+  <h3 class="margin">Who are you, Brandon?</h3>
+  <p>I am currently a senior at <a href="http://www.allegheny.edu" target="_blank">Allegheny College</a> and I am majoring in <a href="http://www.cs.allegheny.edu/" target="_blank">Computer Science</a>. I grew up in California and now reside here in western Pennsylvania.</p>
+  <h3 class="margin">What do you enjoy doing?</h3>
+    <p>I enjoy many of the simple things in life. Some of my hobies include programming, graphic design, and playing my guitar.</p>
+ <!-- <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a> -->
+    <div class="row">
+        <div class="col-sm-4">
+            <p><img id="laptop" src="imgs/laptop.png" class="img-responsive margin hobbie" style="width:100%" alt="Image"> </p>
+        </div>
+        <div class="col-sm-4">
+            <p><img src="imgs/pen.png" class="img-responsive margin hobbie" style="width:100%" alt="Image"></p>
+        </div>
+        <div class="col-sm-4">
+            <p><img src="imgs/guitar.png" class="img-responsive margin hobbie" style="width:100%" alt="Image"></p>
+        </div>
+    </div>
+</div>
+
+    <hr class="line">
+    
+<!-- Third Container (Grid) -->
+<div id="Education" class="container-fluid bg-3 text-center">    
+  <h1 id="education" class="margin">Education</h1><br>
+    I am expected to graduate with a Bachelors in Computer Science May 2016.
+  <h2 class="margin">Courses</h2>
+  <div class="row">
+      <div class="text-left">
+        <h3 class="margin">Computer Science</h3>
+        <ul class="educationlist">
+            <li>
+               <i class="fa fa-code" aria-hidden="true"></i> Principles of Distributed Systems
+            </li>  
+            <li>
+               <i class="fa fa-code" aria-hidden="true"></i> Data Communications and Networks
+            </li>
+            <li>
+               <i class="fa fa-code" aria-hidden="true"></i> Principles of Software Development
+            </li>
+            <li>
+               <i class="fa fa-code" aria-hidden="true"></i> Principles of Database Systems
+            </li>
+        </ul>
+
+
+        <h3 class="margin">Economics</h3>
+        <ul class="educationlist">
+            <li>
+               <i class="fa fa-line-chart" aria-hidden="true"></i> Managerial Economics
+            </li>  
+            <li>
+               <i class="fa fa-line-chart" aria-hidden="true"></i> Economics of Entrepreneurship
+            </li>
+            <li>
+               <i class="fa fa-line-chart" aria-hidden="true"></i> Economics Statistics
+            </li>
+            <li>
+               <i class="fa fa-line-chart" aria-hidden="true"></i> International Economics
+            </li>
+        </ul>
+      </div>
+    </div>
+  Information on all of these courses can be found on the <a href="http://sites.allegheny.edu/academics/catalogue/" target="_blank">Allegheny Course Catalogue</a>
+    <h2 class="margin">Honors</h2>
+    
+    <div class="text-left">
+        <a href="http://sites.allegheny.edu/academics/academic-regulations-and-policies/honors/" target="_blank"><h3>Alden Scholar</h3></a>
+        <ul class="educationlist">
+            <li>
+            <p>
+            Students who, in the course of a year (September to September), complete a minimum of 30 semester credit hours and achieve a grade point average of 3.20 or higher are designated as Alden Scholars.    
+            </p>
+            </li>
+        </ul>
+        <a href="http://www.cs.allegheny.edu/research/cupperscholars/" target="blank"><h3>Cupper Scholar</h3></a>
+        <ul class="educationlist">
+            <li>
+                <p>
+
+                </p>
+            </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact" class="container-fluid bg-4 text-center">
+<!-- <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> -->
+    <p id="contactme"><font size="10">Find Me!</font></p>
+    <p><a href="http://wwww.github.com"><i class="fa fa-github fa-3x links" aria-hidden="true"></i></a>
+    <a href="http://www.linkedin.com"><i class="fa fa-linkedin fa-3x links" aria-hidden="true"></i></a>
+    <a href="http://www.bitbucket.com"><i class="fa fa-bitbucket fa-3x links" aria-hidden="true"></i></a>
+    </p>
+    <p>
+    <a href="http://www.google.com/recaptcha/mailhide/d?k=01mWw7WVUKpf7rpx_ugqTX-w==&amp;c=5OQtLOLrhIFikbsIM1NqQYOUcmoT6AMoe-LiFJLgnI0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501mWw7WVUKpf7rpx_ugqTX-w\75\75\46c\0755OQtLOLrhIFikbsIM1NqQYOUcmoT6AMoe-LiFJLgnI0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">g<sub>click!</sub></a>@allegheny.edu
+    </p>
+</footer>
+
+</body>
 </html>
