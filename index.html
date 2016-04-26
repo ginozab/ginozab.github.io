@@ -8,126 +8,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="icon" href="imgs/bwgcube.png" sizes="16x16 32x32" type="image/png">
+  <link rel="icon" href="imgs/bwgcubefavicon.png" sizes="16x16 32x32" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-      width:100%;
-      height: 100%;
-  }
-  html {
-      width: 100%;
-      height: 100%;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-color: #6fc494;/*#1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #f0f1f5; /*#474e5d; /* Dark Blue */
-      color: #777777;
-  }
-  .bg-3 { 
-      background-color: #f0f1f5; /* #5db5e6 #ffffff; /* White */
-      color: #777777;/*#555555;*/
-  }
-  .bg-4 { 
-      background-color: #122234; /* #2f2f2f; /* Black Gray */
-      color: #777777;/*#fff; */
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      background-color: #f0f1f5;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-      color: #ffffff;
-  }
-  .navbar-nav  li a:hover {
-      background-color: #f0f1f5;
-      color: #1abc9c !important; /* #1abc9c */
-  }
-  .navbar-toggle {
-      background-color: #f0f1f5;
-  }
-  .line {
-    border: 0;
-  }
-  
-  @media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
-}
-
-
-  @media(max-width:991px) and (min-width:768px) {
-    #page-top img {
-        padding-top: 140px;   
-    }
-  }
-  @media(min-width:991px) {
-    #page-top img {
-        padding-top: 80px;
-    }
-  }
-  @media(max-width:767px) {
-    #page-top img {
-        padding-top: 80px;   
-    }
-  }
-  .text-left {
-    padding-left: 12%;   
-  }
-
-  .links {
-      margin: 1%;   
-  }
-  .educationlist {
-    text-align: left;
-    list-style: none;
-    display: inline-block;
-  }
-  .courselistinfo {
-    padding-top: 3%;
-    padding-bottom: 3%;   
-  }
-
-  .img-responsive {
-    margin: 0 auto;
-  }
-      
-  #bwgcube {
-    max-height: 200%;
-    max-width: 200%;
-  }
-  #welcome {
-    margin-top: 5%;   
-  }
-  #education {
-    margin-top: 5%;   
-  }
-  </style>
+<link href="css/personal.css" rel="stylesheet">
 <script>
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
@@ -172,7 +56,10 @@ $(document).on('click','.navbar-collapse.in',function(e) {
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Education">Education</a>
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
                     </li>
                     <li>
                         <a href="pdfs/brandon_ginoza_resume.pdf" target="_blank">Resume</a>
@@ -191,113 +78,44 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 <div id="page-top" class="container-fluid bg-1 text-center">
   <!--<img src="imgs/curvedlettering.png" class="img-responsive" style="display:inline" alt="name"> -->
     <img src="imgs/bwgcube.png" class="img-responsive" style="display:inline" alt="name">
-
+    <h1 style="font-size:50px;">Brandon W. Ginoza</h1>
+    <h3 class="margin">A programming, guitar playing, doer.</h3>
 </div>
-<hr class="line">
+<!--<hr class="line"> -->
 <!-- Second Container -->
 <div id="about" class="container-fluid bg-2 text-center">
   <h1 id="welcome" class="margin">Welcome!</h1>
-  <p>Thank you for visiting my website! Let me tell you a little about myself by answering a few questions you may have.</p>
-  <h3 class="margin">Who are you, Brandon?</h3>
-  <p>I am currently a senior at <a href="http://www.allegheny.edu" target="_blank">Allegheny College</a> and I am majoring in <a href="http://www.cs.allegheny.edu/" target="_blank">Computer Science</a>. I grew up in California and now reside here in western Pennsylvania.</p>
-  <h3 class="margin">What do you enjoy doing?</h3>
-    <p>I enjoy many of the simple things in life. Some of my hobbies include programming, graphic design, and playing my guitar.</p>
+  <p class="p-margin">Hey, I'm Brandon! Let me tell you a little about myself. I am currently a senior at <a href="http://www.allegheny.edu" target="_blank">Allegheny College</a> majoring in <a href="http://www.cs.allegheny.edu/" target="_blank">Computer Science</a>. I grew up in California and now reside here in western Pennsylvania. In my free time I enjoy spending time with friends and family, programming, graphic design, and playing the guitar.</p>
+
  <!-- <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Search
   </a> -->
-    <div class="row">
-        <div class="col-sm-4">
-            <p><img id="laptop" src="imgs/laptop.png" class="img-responsive margin hobbie" style="width:50%" alt="Image"> </p>
-        </div>
-        <div class="col-sm-4">
-            <p><img src="imgs/pen.png" class="img-responsive margin hobbie" style="width:50%" alt="Image"></p>
-        </div>
-        <div class="col-sm-4">
-            <p><img src="imgs/guitar.png" class="img-responsive margin hobbie" style="width:50%" alt="Image"></p>
-        </div>
-    </div>
+
 </div>
 
-    <hr class="line">
+   <!-- <hr class="line"> -->
     
-<!-- Third Container (Grid) -->
-<div id="Education" class="container-fluid bg-3 text-center">    
-  <h1 id="education">Education</h1><br>
-    I am expected to graduate with a Bachelors in Computer Science May 2016.
-  <h1 class="margin">Courses</h1>
-  <div class="row">
-      <div class="text-left">
-        <h3 class="margin">Computer Science</h3>
-        <ul class="educationlist">
-            <li>
-               <i class="fa fa-code" aria-hidden="true"></i> Principles of Distributed Systems
-            </li>  
-            <li>
-               <i class="fa fa-code" aria-hidden="true"></i> Data Communications and Networks
-            </li>
-            <li>
-               <i class="fa fa-code" aria-hidden="true"></i> Principles of Software Development
-            </li>
-            <li>
-               <i class="fa fa-code" aria-hidden="true"></i> Principles of Database Systems
-            </li>
-        </ul>
-
-
-        <h3 class="margin">Economics</h3>
-        <ul class="educationlist">
-            <li>
-               <i class="fa fa-line-chart" aria-hidden="true"></i> Managerial Economics
-            </li>  
-            <li>
-               <i class="fa fa-line-chart" aria-hidden="true"></i> Economics of Entrepreneurship
-            </li>
-            <li>
-               <i class="fa fa-line-chart" aria-hidden="true"></i> Economics Statistics
-            </li>
-            <li>
-               <i class="fa fa-line-chart" aria-hidden="true"></i> International Economics
-            </li>
-        </ul>
-      </div>
-    </div>
-    <div class="courselistinfo">
-  Information on all of these courses can be found on the <a href="http://sites.allegheny.edu/academics/catalogue/" target="_blank">Allegheny Course Catalogue</a>
-    </div>
-    <h1 class="margin">Honors</h1>
-    
-    <div class="text-left">
-        <a href="http://sites.allegheny.edu/academics/academic-regulations-and-policies/honors/" target="_blank"><h3>Alden Scholar</h3></a>
-        <ul class="educationlist">
-            <li>
-            <p>
-            Students who, in the course of a year (September to September), complete a minimum of 30 semester credit hours and achieve a grade point average of 3.20 or higher are designated as Alden Scholars.    
-            </p>
-            </li>
-        </ul>
-        <a href="http://www.cs.allegheny.edu/research/cupperscholars/" target="blank"><h3>Cupper Scholar</h3></a>
-        <ul class="educationlist">
-            <li>
-                <p>
-                    Recognizing the noteworthy contributions of the late Dr. Robert D. Cupper, the Cupper Scholar Research Program awards two students from the Computer Science department of Allegheny College the opportunity to conduct collaborative research with a faculty member. 
-                </p>
-            </li>
-        </ul>
-    </div>
-  </div>
-</div>
 
 <!-- Footer -->
 <footer id="contact" class="container-fluid bg-4 text-center">
 <!-- <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> -->
-    <p id="contactme"><font size="10">Find Me!</font></p>
-    <p><a href="https://github.com/ginozab" target="_blank"><i class="fa fa-github fa-3x links" aria-hidden="true"></i></a>
-    <a href="http://www.linkedin.com/in/ginozab" target="_blank"><i class="fa fa-linkedin fa-3x links" aria-hidden="true"></i></a>
-    <a href="https://bitbucket.org/ginozab/" target="_blank"><i class="fa fa-bitbucket fa-3x links" aria-hidden="true"></i></a>
+    <div class="row">
+        <div class="col-xs-6">
+            <h3>Find Me!</h3>
+            <p>If you wish to view some of my work or my professional profile, feel free to click one of the following links.</p>
+            <p><a href="https://github.com/ginozab" target="_blank"><i class="fa fa-github fa-2x links" aria-hidden="true"></i></a>
+    <a href="http://www.linkedin.com/in/ginozab" target="_blank"><i class="fa fa-linkedin fa-2x links" aria-hidden="true"></i></a>
+    <a href="https://bitbucket.org/ginozab/" target="_blank"><i class="fa fa-bitbucket fa-2x links" aria-hidden="true"></i></a>
     </p>
-    <p>
+        </div>
+        <div class="col-xs-6">
+            <h3>Contact Me!</h3>
+            <p> If you wish to contact me, say hello, or give me some feedback, feel free to contact me at 
     <a href="http://www.google.com/recaptcha/mailhide/d?k=01mWw7WVUKpf7rpx_ugqTX-w==&amp;c=5OQtLOLrhIFikbsIM1NqQYOUcmoT6AMoe-LiFJLgnI0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501mWw7WVUKpf7rpx_ugqTX-w\75\75\46c\0755OQtLOLrhIFikbsIM1NqQYOUcmoT6AMoe-LiFJLgnI0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">g<sub>click!</sub></a>@allegheny.edu
     </p>
+        </div>
+    </div>
+
 </footer>
 
 </body>
